@@ -4,12 +4,10 @@ public class Test {
 
     public static void main(String[] args) {
         Test test = new Test();
-        if (test.check("abcacbabcbacbcacbacabacbcabcbacabacbcacb"))
+        if (test.check("abcacbabcbacbcacbacabacbcabcbacabacbcacba"))
         {
             System.out.println("YAYYYYY!");
         }
-
-       // test.check("abcba");
     }
 
     public boolean check(String str)
@@ -25,6 +23,11 @@ public class Test {
                     System.out.println("Duplicated adjacent substrings found. The i = " + i + " and the j = " + j + " and the first = " + first
                     + " and the second = " + second);
                     return false;
+                }
+                else
+                {
+                    System.out.println("The i = " + i + " and the j = " + j + " and the first = " + first
+                            + " and the second = " + second);
                 }
             }
         }
